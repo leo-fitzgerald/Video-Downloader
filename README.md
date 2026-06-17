@@ -4,7 +4,7 @@ Simple desktop video downloader built with Tkinter and [`yt-dlp`](https://github
 
 ## What this project does
 
-This repository contains a single Python GUI application: `/home/runner/work/Video-Downloader/Video-Downloader/yt-dlp_gui_wrapper.py`.
+This repository contains a single Python GUI application: `yt-dlp_gui_wrapper.py`.
 
 The app lets users:
 
