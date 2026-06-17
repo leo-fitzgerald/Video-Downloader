@@ -1,32 +1,33 @@
 """
-17.06.2026 - Leo Fitzgerald
+Video Downloader GUI
 
-Tkinter video downloader
+Desktop Tkinter frontend for yt-dlp.
 
-A GUI wrapper around yt-dlp. Paste one or more video URLs (one per line),
-choose quality/format and options,then download. Works for any site yt-dlp support.
+Paste one or more supported video URLs, choose the output format and options,
+then download them with a simple local GUI.
 
-Features:
+Highlights:
     - Resolution / quality picker (4K down to 144p, plus best/worst)
-    - Download type: video+audio, video-only, or audio-only
-    - Audio extraction to mp3/m4a/opus/wav/flac with a quality setting
-    - Preferred output container (mp4/mkv/webm)
-    - Playlist toggle
-    - Subtitles: download + optional embedding, with language selection
-    - Embed thumbnail, metadata and chapters
+    - Download modes: video + audio, video only, or audio only
+    - Audio extraction to mp3, m4a, opus, wav, or flac
+    - Preferred merged container: mp4, mkv, or webm
+    - Playlist support
+    - Subtitle download with optional embedding and language selection
+    - Thumbnail, metadata, and chapter embedding
     - Download speed limit
-    - Load cookies from a browser (for age-restricted / private videos)
+    - Browser cookie import for restricted/private content
     - Custom output filename template
-    - Cancel an in-progress download
-    - Paste from clipboard, clear buttons, open output folder
-    - Remembers settings between runs
+    - Cancel support, clipboard paste, and output-folder shortcut
+    - Persistent user settings stored in ~/.video_downloader.json
 
-Requirements:
-    pip install yt-dlp
-    ffmpeg on PATH (needed for merging, audio extraction, and embedding)
+Main dependencies:
+    - Python 3.10+
+    - yt-dlp
+    - ffmpeg on PATH
+    - Optional: Deno or Node.js for YouTube JS challenge solving
 
 Run:
-    python video_downloader.py
+    python yt-dlp_gui_wrapper.py
 """
 
 import json
